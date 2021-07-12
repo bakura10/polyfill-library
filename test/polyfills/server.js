@@ -257,9 +257,9 @@ function createEndpoint(template) {
 
 		// Make sure we always test something.
 		// This catches edge cases were a run is requested for a polyfill that isn't requested for the current UA.
-    if (features.length === 0) {
-      features = polyfills;
-    }
+		if (features.length === 0) {
+			features = polyfills;
+		}
 
 		response.status(200);
 
