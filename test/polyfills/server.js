@@ -244,6 +244,12 @@ function createEndpoint(template) {
         return featuresArgument.includes(polyfill.feature);
       })
       : polyfills;
+    
+    // Make sure we always test something
+    if (features.length === 0) {
+      features = polyfills;
+    }
+
     response.status(200);
 
     if (shard) {
