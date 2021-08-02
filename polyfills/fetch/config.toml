@@ -1,9 +1,11 @@
 dependencies = [
 	"Array.prototype.forEach",
+	"Array.isArray",
 	"Object.getOwnPropertyNames",
 	"Promise",
 	"XMLHttpRequest",
-	"Symbol.iterator"
+	"Symbol.iterator",
+	"URL"
 ]
 license = "MIT"
 spec = "https://fetch.spec.whatwg.org/"
